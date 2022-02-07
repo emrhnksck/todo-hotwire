@@ -5,6 +5,7 @@
       <%= todo.title %> <br>
       <div class="btn-group float-right">
         <%= link_to "Complete",update_completed_path(id: todo.id, todo: todo),class:"btn btn-secondary" %>
+        <%= button_to "Destroy",todo,method: :delete, class:"btn btn-danger" %>
       </div>
     </div>
   </div>
