@@ -1,0 +1,7 @@
+<h1>Hotwire Todo List</h1>
+
+<%= turbo_stream_from "todos" %>
+
+<%= turbo_frame_tag "todo_form" do %>
+  <%= render "form" , todo: @todo %>
+<% end %>
